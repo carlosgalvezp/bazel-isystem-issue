@@ -1,0 +1,9 @@
+cc_library(
+    name = "foo",
+    srcs = ["foo.cpp"],
+    copts = [
+        "-Wold-style-cast",
+        "-Werror",
+    ],
+    deps = ["@bar"],
+)
